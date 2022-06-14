@@ -17,9 +17,9 @@ h3 {
 }
   
   /* Pen-specific styles */
-html, ul, li {
+html {
     height: 80vh;
-  }
+}
   
   body {
     color: rgba(175, 67, 67, 0);
@@ -28,7 +28,7 @@ html, ul, li {
     line-height: 150%;
     text-shadow: 0 2px 2px #f5f3f0;
     background-image: url("background.png");
-    height: 100vh;
+    height: 120vh;
     
   }
   
@@ -40,13 +40,24 @@ html, ul, li {
     padding: 1rem;
   }
   
-  
-  /* Pattern styles */
-  ul {
-    column-count: 2;
-    column-gap: 0;
+  ul{
+    color: rgb(0, 0, 0);
+    font-size: 100%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    text-shadow: 0 2px 2px #00000000;
   }
   
+  li{
+    text-align: left
+  }
+
+  ul br{
+    line-height: 25px
+  }
+
   img {
     border-radius: 16px;
     width: 200px;
