@@ -1,0 +1,117 @@
+h1 {
+    color: rgb(40, 47, 56);
+    font-family: verdana;
+    font-size: 500%;
+}
+
+h2 {
+    color: rgb(40, 47, 56);
+    font-family: verdana;
+    font-size: 200%;
+}
+
+h3 {
+    color: rgb(40, 47, 56);
+    font-family: verdana;
+    font-size: 100%;
+}
+
+p {
+    color: rgb(40, 47, 56);
+    font-family: verdana;
+    font-size: 100%;
+}
+  
+  /* Pen-specific styles */
+html, body, ul, li {
+    height: 80vh;
+  }
+  
+  body {
+    color: rgba(175, 67, 67, 0);
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    line-height: 150%;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/409/192/original/abstract-geometric-banner-free-vector.jpg");
+  }
+  
+  article {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translate(0, -50%);
+    padding: 1rem;
+  }
+  
+  
+  /* Pattern styles */
+  ul {
+    column-count: 2;
+    column-gap: 0;
+  }
+  
+  .skill {
+    background: #1a141433;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .skill h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .wrapper .skill{
+    position: relative;
+    background-color: #e2e9ec;
+    border-radius: 75%;
+    margin: 20px;
+    width: 300px;
+    height: 60px;
+    line-height: 0px;
+    font-size: 22px;
+    
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #333;
+    text-decoration: none;
+  }
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
