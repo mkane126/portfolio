@@ -1,0 +1,100 @@
+h1 {
+    color: rgb(40, 47, 56);
+    font-family: verdana;
+    font-size: 350%;
+}
+
+h2 {
+    color: rgb(40, 47, 56);
+    font-family: verdana;
+    font-size: 200%;
+}
+
+h3 {
+    color: rgb(40, 47, 56);
+    font-family: verdana;
+    font-size: 100%;
+}
+  
+  /* Pen-specific styles */
+html, ul, li {
+    height: 80vh;
+  }
+  
+  body {
+    color: rgba(175, 67, 67, 0);
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    line-height: 150%;
+    text-shadow: 0 2px 2px #f5f3f0;
+    background-image: url("background.png");
+    height: 100vh;
+    
+  }
+  
+  article {
+    position: relative;
+    top: 15%;
+    text-align: center;
+    transform: translate(0, -25%);
+    padding: 1rem;
+  }
+  
+  
+  /* Pattern styles */
+  ul {
+    column-count: 2;
+    column-gap: 0;
+  }
+  
+  img {
+    border-radius: 16px;
+    width: 200px;
+  }
+
+img:hover {
+    box-shadow: 0 0 4px 1px rgba(0, 140, 186, 0.5);
+}
+
+.image img {
+    transition: 0.5s all ease-in-out;
+}
+  
+.image:hover img {
+    transform: scale(1.15);
+}
+
+.wrapper .image{
+    position: absolute;
+    background-color: #11000000;
+    border-radius: 40%;
+    margin: 0px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0);
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+}
+
+div:not(:last-child) {
+    margin-right: 550px;
+  }
+
+figure {
+    display: inline-block;
+    margin: 20px; /* adjust as needed */
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    text-align: center;
+    color: rgb(5, 12, 22);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0);
+    line-height: 1.1;
+}
